@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyMapApp</string>
+    <string name="access_token">pk.eyJ1Ijoib2hpcyIsImEiOiJjbGN2NnlqaTcxZ2w4M3Ftc2prNXZ4dzM0In0.VYMry1SOc8OYtVn-YCkjbA</string>
+</resources>
