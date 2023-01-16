@@ -41,6 +41,16 @@ class MainActivity :
     private var locationLayerPlugin: LocationLayerPlugin? = null
     private lateinit var originLocation: Location
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        mapView.onSaveInstanceState(outState)
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onLowMemory() {
+        mapView.onLowMemory()
+        super.onLowMemory()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Mapbox.getInstance(this, getString(R.string.access_token))
